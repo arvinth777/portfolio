@@ -1917,7 +1917,25 @@
             © 2026 Shashish • Built with design, not templates
         </div>
     </footer>
+<script>
+    // Register ScrollTrigger if not already done
+    gsap.registerPlugin(ScrollTrigger);
 
+    // Footer Name Swipe Animation
+    gsap.from(".footer-name", {
+        scrollTrigger: {
+            trigger: ".site-footer", // Starts when the footer enters the view
+            start: "top 90%",        // Animates when footer is 90% down the screen
+            toggleActions: "play none none none"
+        },
+        x: -200,                // Start 200px to the left
+        opacity: 0,             // Start invisible
+        duration: 1.5,          // Speed of the swipe
+        ease: "power4.out",     // Smooth "deceleration" effect
+        autoAlpha: 1,           // Switches visibility from hidden to visible
+        delay: 0.2              // Slight delay for a premium feel
+    });
+</script>
 
 </body>
 
