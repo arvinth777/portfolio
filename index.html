@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shashish | Graphic Designer Portfolio</title>
+    <title>Arvinth Cinmayan | Software Engineer Portfolio</title>
     <style>
         .ttcommons {
             font-family: 'TTCommonsLocal', sans-serif;
@@ -44,8 +44,8 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #000000;
-            color: white;
+            background: #0e1117;
+            color: #e6edf3;
         }
 
         @font-face {
@@ -95,9 +95,9 @@
 
         .hero-section {
             background:
-                radial-gradient(circle at center, transparent 20%, rgba(0, 0, 0, 0.8) 100%),
+                radial-gradient(circle at center, transparent 20%, rgba(14, 17, 23, 0.9) 100%),
                 /* Vignette */
-                radial-gradient(circle at 75% 50%, #ff8c42 0%, #f7931e 30%, #c1272d 60%, #000000 100%);
+                radial-gradient(circle at 75% 50%, #3fbac2 0%, #2a8a91 30%, #1a5a60 60%, #0e1117 100%);
             /* Halo Glow */
             min-height: 95vh;
             padding: 2rem;
@@ -115,26 +115,19 @@
         }
 
 
-        /* --- YOUR PICTURE INTEGRATION (CENTERED) --- */
+        /* --- GEOMETRIC BACKGROUND PATTERN --- */
         .hero-section::before {
-            transform: translateX(-50%) translateY(var(--hero-parallax, 0)) scale(0.77625);
             content: '';
             position: absolute;
             bottom: 0;
-            /* Aligned to bottom so you "stand" on the curve */
             left: 50%;
-            transform: translateX(-50%) scale(0.77625);
-            /* decreased 10% from 0.8625 */
-            transform-origin: center bottom;
-            width: min(80vw, 700px);
-            /* Larger, responsive size */
-            height: 200%;
-            background-image: url("https://i.ibb.co/nNbtQT6t/11.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            opacity: 0.85;
-            /* Increased opacity for better visibility */
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 20% 80%, rgba(63, 186, 194, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(122, 162, 247, 0.08) 0%, transparent 50%);
+            opacity: 0.6;
             z-index: 1;
             pointer-events: none;
         }
@@ -197,8 +190,8 @@
         }
 
         .cta-button {
-            background: white;
-            color: #ff6b35;
+            background: #e6edf3;
+            color: #0e1117;
             padding: 0.8rem 1.8rem;
             border-radius: 30px;
             text-decoration: none;
@@ -211,18 +204,20 @@
 
         .cta-button:hover {
             transform: scale(1.05);
+            background: #3fbac2;
+            color: #0e1117;
         }
 
         .arrow {
             width: 20px;
             height: 20px;
-            background: #ff6b35;
+            background: #3fbac2;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 0.8rem;
-            color: white;
+            color: #0e1117;
         }
 
         .hero-content {
@@ -290,7 +285,7 @@
         .service-icon {
             width: 24px;
             height: 24px;
-            color: #ff6b35;
+            color: #3fbac2;
             flex-shrink: 0;
         }
 
@@ -400,7 +395,7 @@
         }
 
         .section-label {
-            color: #ff6b35;
+            color: #3fbac2;
             font-weight: 600;
             margin-bottom: 1rem;
         }
@@ -435,7 +430,7 @@
         .about-description {
             font-size: 0.6rem;
             line-height: 1.6;
-            color: #aaa;
+            color: #b0b8c4;
             font-weight: 400;
             max-width: 600px;
             text-align: right;
@@ -444,7 +439,7 @@
         }
 
         .about-description b {
-            color: white;
+            color: #e6edf3;
             font-size: 0.7rem;
             display: block;
             margin-bottom: 0.5rem;
@@ -453,7 +448,7 @@
         .portfolio-carousel {
             overflow: hidden;
             padding: 2rem 0;
-            background: #050505;
+            background: #0a0d12;
             position: relative;
             left: 50%;
             right: 50%;
@@ -482,19 +477,19 @@
         .portfolio-carousel::before {
             left: 0;
             background: linear-gradient(to right,
-                    #050505 0%,
-                    rgba(5, 5, 5, 0.85) 30%,
-                    rgba(5, 5, 5, 0.4) 60%,
-                    rgba(5, 5, 5, 0) 100%);
+                    #0a0d12 0%,
+                    rgba(10, 13, 18, 0.85) 30%,
+                    rgba(10, 13, 18, 0.4) 60%,
+                    rgba(10, 13, 18, 0) 100%);
         }
 
         .portfolio-carousel::after {
             right: 0;
             background: linear-gradient(to left,
-                    #050505 0%,
-                    rgba(5, 5, 5, 0.85) 30%,
-                    rgba(5, 5, 5, 0.4) 60%,
-                    rgba(5, 5, 5, 0) 100%);
+                    #0a0d12 0%,
+                    rgba(10, 13, 18, 0.85) 30%,
+                    rgba(10, 13, 18, 0.4) 60%,
+                    rgba(10, 13, 18, 0) 100%);
         }
 
 
@@ -564,7 +559,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #49c8d3;
+            color: #3fbac2;
             margin-bottom: 1rem;
             margin-top: 2rem;
         }
@@ -578,7 +573,7 @@
             font-family: 'TTCommonsLocal', sans-serif;
             font-size: 0.65rem;
             line-height: 1.8;
-            color: #cfcfcf;
+            color: #e6edf3;
             margin: 0;
             padding: 0;
             list-style: none;
@@ -590,13 +585,13 @@
         }
 
         .about-details a {
-            color: #aaa;
+            color: #b0b8c4;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .about-details a:hover {
-            color: #60d7ff;
+            color: #7aa2f7;
         }
 
         .about-right {
@@ -644,8 +639,8 @@
 
         .category-card:hover {
             transform: translateY(-8px) scale(1.03);
-            border-color: #ff6b35;
-            box-shadow: 0 20px 30px rgba(255, 107, 53, 0.2);
+            border-color: #3fbac2;
+            box-shadow: 0 20px 30px rgba(63, 186, 194, 0.2);
             transform: translateY(-10px) scale(1.05);
         }
 
@@ -826,7 +821,7 @@
         }
 
         .tools-description b {
-            color: #49c8d3;
+            color: #3fbac2;
         }
 
         .tools-title {
@@ -921,11 +916,11 @@
         }
 
         .category-btn:hover {
-            background: #ff6b35;
-            border-color: #ff6b35;
+            background: #3fbac2;
+            border-color: #3fbac2;
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 30px rgba(255, 107, 53, 0.3);
-            color: white;
+            box-shadow: 0 15px 30px rgba(63, 186, 194, 0.3);
+            color: #0e1117;
         }
 
         @media (max-width: 768px) {
@@ -980,7 +975,7 @@
 
         /* --- FOOTER --- */
         .site-footer {
-            background: radial-gradient(circle at top, rgba(255, 255, 255, 0.05), #000);
+            background: radial-gradient(circle at top, rgba(63, 186, 194, 0.03), #0e1117);
             border-top: 1px solid rgba(255, 255, 255, 0.08);
             padding: 4rem 2rem 2rem;
         }
@@ -1035,7 +1030,7 @@
         }
 
         .footer-column a:hover {
-            color: #ff6b35;
+            color: #3fbac2;
             transform: translateX(3px);
         }
 
@@ -1082,12 +1077,21 @@
             }
         }
 
-        /* --- MOBILE TWEAKS (small devices) --- */
+        /* --- MOBILE TWEAKS (Consolidated) --- */
         @media (max-width: 480px) {
+
+            /* Hide floating connect button to prevent overlap */
+            #glass-button-container {
+                display: none !important;
+            }
+
+            /* General Layout & Hero */
             .hero-section {
-                min-height: 70vh;
+                min-height: 60vh;
                 padding: 0.75rem;
+                padding-top: 60px !important;
                 border-radius: 0 0 28px 28px;
+                height: auto !important;
             }
 
             .hero-section::before {
@@ -1097,6 +1101,29 @@
                 height: 180%;
             }
 
+            .hero-content {
+                padding: 0.6rem 0;
+                gap: 1rem;
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2.8rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+
+            .hero-content p {
+                font-size: 0.9rem !important;
+                max-width: 280px !important;
+                margin: 0 auto 1.5rem !important;
+            }
+
+            .hero-btn {
+                padding: 0.8rem 1.8rem !important;
+                font-size: 0.9rem !important;
+            }
+
+            /* Navigation */
             nav {
                 padding: 0.5rem 1rem;
             }
@@ -1114,150 +1141,42 @@
                 font-size: 0.95rem;
             }
 
-            .hero-content {
-                padding: 1rem 0;
-                gap: 1rem;
-                grid-template-columns: 1fr;
+            /* Hero Image Tweaks */
+            .hero-image-container {
+                height: 350px !important;
+                margin-top: -20px !important;
+                opacity: 1 !important;
             }
 
-            .hero-text h1 {
-                font-size: clamp(2rem, 8vw, 3.6rem);
+            .hero-image {
+                object-position: center 20% !important;
+                transform: scale(0.9) !important;
             }
 
+            /* Services & Features */
             .services {
                 max-width: 100%;
-                margin: 2rem auto;
+                margin: 1.25rem auto 2rem;
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .portfolio-item {
-                min-width: 180px;
-                height: auto;
-            }
-
-            .portfolio-carousel {
-                left: 0;
-                right: 0;
-                margin-left: 0;
-                margin-right: 0;
-                width: 100%;
-                max-width: 100%;
-            }
-
-            .categories-section {
-                height: auto !important;
-                grid-template-rows: auto;
-            }
-
-            .category-card {
-                min-height: 140px;
-                align-items: center;
-                justify-content: center;
-                padding: 1rem;
-            }
-
-            .footer-name {
-                font-size: clamp(2rem, 12vw, 8rem);
-                opacity: 0.04;
-            }
-
-            /* tighter tools grid for very small screens */
-            .tools-grid {
-                grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
-                gap: 0.5rem;
-            }
-
-            .tool-icon {
-                width: 40px;
-                height: 40px;
-                display: block;
-                object-fit: contain;
-                padding: 3px;
-                box-sizing: border-box;
-            }
-
-            .tool-name {
-                font-size: 0.6rem;
-            }
-
-            /* Reduce vertical gaps and paddings for compact mobile layout */
-            .about-section {
-                margin: 1.5rem auto;
-                padding: 0 1rem;
-            }
-
-            .about-grid {
-                gap: 1rem;
-                grid-template-columns: 1fr;
-                margin-bottom: 1.5rem;
-            }
-
-            .about-description {
-                max-width: 100%;
-                margin-left: 0;
-                text-align: left;
-                font-size: 0.78rem;
-            }
-
-            .portfolio-carousel {
-                padding: 1rem 0;
-            }
-
-            .portfolio-item {
-                min-width: 160px;
-                height: auto;
-            }
-
-            .brands-section {
-                padding: 1.5rem 1rem;
-            }
-
-            .profile-about-section {
-                margin: 2rem auto;
-                padding: 0 1rem;
-                gap: 1rem;
-            }
-
-            .tools-section {
-                margin: 1.5rem auto;
-                padding: 0 1rem;
-            }
-
-            .hero-section {
-                min-height: 60vh;
-            }
-
-            .hero-content {
-                padding: 0.6rem 0;
-            }
-
-            .services {
-                margin-top: 1.25rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            /* ... existing styles ... */
-
-            /* 1. Reduce the massive space around the "Initial Portfolio" heading */
+            /* About Section */
             .about-section {
                 margin: 1rem auto !important;
-                /* Reduced from 1.5rem */
+                padding: 0 1rem;
             }
 
             .about-grid {
                 gap: 0.5rem !important;
-                /* Tighten gap between title and description */
+                grid-template-columns: 1fr;
                 margin-bottom: 1rem !important;
             }
 
             .about-title {
                 font-size: 2.2rem !important;
-                /* Scale down the container font-size */
                 margin-bottom: 0.5rem !important;
             }
 
-            /* 2. Adjust the specific parts of the title to prevent overlapping/extra height */
             .initial-part {
                 font-size: 1.1em !important;
                 letter-spacing: -1px !important;
@@ -1266,214 +1185,196 @@
             .portfolio-part {
                 font-size: 1.2em !important;
                 top: 0.1em !important;
-                /* Pull the script font closer to the baseline */
                 left: -0.1em !important;
             }
 
-            /* 3. Remove the divider completely on mobile to save vertical space */
             .about-divider {
                 display: none;
             }
 
-            /* 4. Tighten the description text */
             .about-description {
+                max-width: 100%;
+                margin-left: 0;
+                text-align: left;
                 font-size: 0.85rem !important;
                 line-height: 1.4 !important;
             }
-        }
 
-        @media (max-width: 480px) {
-            /* ... existing mobile styles ... */
+            /* Portfolio Carousel & Items */
+            .portfolio-carousel {
+                left: 0;
+                right: 0;
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+                max-width: 100%;
+                padding: 1rem 0;
+            }
+
+            .portfolio-carousel::before,
+            .portfolio-carousel::after {
+                width: 60px !important;
+            }
+
+            .portfolio-carousel::before {
+                background: linear-gradient(to right, rgba(5, 5, 5, 0.8) 0%, rgba(5, 5, 5, 0) 100%) !important;
+            }
+
+            .portfolio-carousel::after {
+                background: linear-gradient(to left, rgba(5, 5, 5, 0.8) 0%, rgba(5, 5, 5, 0) 100%) !important;
+            }
+
+            .carousel-container {
+                animation: scroll 20s linear infinite !important;
+                gap: 12px !important;
+            }
+
+            .portfolio-item {
+                min-width: 130px !important;
+                height: auto;
+                padding: 0 5px !important;
+            }
+
+            .portfolio-item img {
+                height: 220px !important;
+                width: auto !important;
+                filter: brightness(0.9);
+            }
+
+            /* Categories & Sections */
+            .categories-section {
+                height: auto !important;
+                grid-template-rows: auto;
+            }
+
+            .category-card {
+                min-height: 140px;
+                padding: 1rem;
+            }
 
             .brands-section {
                 padding: 1.5rem 0.5rem !important;
-                /* Reduce side padding to give logos more room */
             }
 
             .brands-grid {
                 display: flex !important;
                 flex-wrap: nowrap !important;
-                /* Force all items onto one line */
                 justify-content: space-between !important;
                 gap: 0.5rem !important;
-                /* Minimal gap to prevent touching */
                 align-items: center !important;
             }
 
             .brand-item {
                 flex: 1;
-                /* Ensure each item takes up equal space */
                 display: flex;
                 justify-content: center;
             }
 
             .brand-logo {
                 height: auto !important;
-                /* Allow height to scale proportionally */
                 max-height: 35px !important;
-                /* Cap the height so they fit vertically */
                 width: 100% !important;
-                /* Let them fill the flex container width */
                 max-width: 80px !important;
-                /* Prevent any single logo from becoming too large */
                 object-fit: contain !important;
-                /* Ensure logos aren't distorted */
+            }
+
+            /* Tools & Footer */
+            .tools-section {
+                margin: 1.5rem auto;
+                padding: 0 1rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+                gap: 0.5rem;
+            }
+
+            .tool-icon {
+                width: 40px;
+                height: 40px;
+                padding: 3px;
+            }
+
+            .tool-name {
+                font-size: 0.6rem;
+            }
+
+            .profile-about-section {
+                margin: 2rem auto;
+                padding: 0 1rem;
+                gap: 1rem;
+            }
+
+            .footer-name {
+                font-size: clamp(2rem, 12vw, 8rem);
+                opacity: 0.04;
+            }
+
+            /* Glass Popup */
+            .glass-popup {
+                width: 220px;
+                bottom: 100px;
+                font-size: 0.8rem;
             }
         }
 
-        @media (max-width: 480px) {
-            /* ... your other mobile styles ... */
-
-            /* 1. Decrease the side blur power (Edge Fades) */
-            .portfolio-carousel::before,
-            .portfolio-carousel::after {
-                width: 60px !important;
-                /* Reduced from 140px */
-            }
-
-            .portfolio-carousel::before {
-                background: linear-gradient(to right,
-                        rgba(5, 5, 5, 0.8) 0%,
-                        rgba(5, 5, 5, 0) 100%) !important;
-            }
-
-            .portfolio-carousel::after {
-                background: linear-gradient(to left,
-                        rgba(5, 5, 5, 0.8) 0%,
-                        rgba(5, 5, 5, 0) 100%) !important;
-            }
-
-            /* 2. Decrease poster carousel size by 40% */
-            .portfolio-item {
-                min-width: 130px !important;
-                /* ~40% reduction from 220px/mobile baseline */
-                padding: 0 5px !important;
-                /* Tighten horizontal spacing */
-            }
-
-            .portfolio-item img {
-                height: 220px !important;
-                /* Scale down the height to keep aspect ratio */
-                width: auto !important;
-                filter: brightness(0.9);
-                /* Slightly boost brightness for mobile screens */
-            }
-
-            /* 3. Slow down the scroll slightly for better visibility on smaller posters */
-            .carousel-container {
-                animation: scroll 20s linear infinite !important;
-                gap: 12px !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-
-            /* 1. Decrease overall hero section size */
-            .hero {
-                padding-top: 60px !important;
-                /* Move content up to show more of the image */
-                height: auto !important;
-                min-height: 80vh !important;
-            }
-
-            /* 2. Make the picture more visible */
-            .hero-image-container {
-                height: 350px !important;
-                /* Shorter container to prevent the image from being cut off */
-                margin-top: -20px !important;
-                opacity: 1 !important;
-                /* Ensure full visibility */
-            }
-
-            .hero-image {
-                object-position: center 20% !important;
-                /* Adjusts the crop to show the face/upper body better */
-                transform: scale(0.9) !important;
-                /* Slightly shrink the image to fit the screen better */
-            }
-
-            /* 3. Decrease size of text elements */
-            .hero-content h1 {
-                font-size: 2.8rem !important;
-                /* Smaller main heading */
-                margin-bottom: 0.5rem !important;
-            }
-
-            .hero-content p {
-                font-size: 0.9rem !important;
-                /* Smaller sub-text */
-                max-width: 280px !important;
-                margin: 0 auto 1.5rem !important;
-            }
-
-            .hero-btn {
-                padding: 0.8rem 1.8rem !important;
-                /* Smaller button */
-                font-size: 0.9rem !important;
-            }
-        }
         /* --- GLASSMORPHISM POPUP --- */
-.glass-popup {
-    position: fixed;
-    bottom: 30px;
-    right: -400px; /* Hidden by default */
-    width: 280px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    transition: right 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    font-family: 'TTCommonsLocal', sans-serif;
-}
+        .glass-popup {
+            position: fixed;
+            bottom: 30px;
+            right: -400px;
+            /* Hidden by default */
+            width: 280px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            transition: right 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-family: 'TTCommonsLocal', sans-serif;
+        }
 
-.glass-popup.show {
-    right: 30px; /* Slide in position */
-}
+        .glass-popup.show {
+            right: 30px;
+            /* Slide in position */
+        }
 
-.popup-content {
-    position: relative;
-    color: white;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
+        .popup-content {
+            position: relative;
+            color: white;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
 
-.popup-content a {
-    color: #ff6b35; /* Matching your orange theme */
-    text-decoration: none;
-    font-weight: 700;
-}
+        .popup-content a {
+            color: #3fbac2;
+            /* Matching your cyan theme */
+            text-decoration: none;
+            font-weight: 700;
+        }
 
-.popup-content a:hover {
-    text-decoration: underline;
-}
+        .popup-content a:hover {
+            text-decoration: underline;
+        }
 
-#close-popup {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: color 0.3s;
-}
+        #close-popup {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
 
-#close-popup:hover {
-    color: white;
-}
-
-@media (max-width: 480px) {
-    .glass-popup {
-        width: 220px;
-        bottom: 100px; /* Higher up to avoid overlapping your "Connect" button */
-        font-size: 0.8rem;
-    }
-}
+        #close-popup:hover {
+            color: white;
+        }
     </style>
 </head>
 
@@ -1481,8 +1382,9 @@
 
     <section class="hero-section reveal">
         <nav>
-            <div class="logo">
-                <img src="https://i.ibb.co/NdZmT13P/ls2-Photoroom-png-Photoroom-Copy-1-Copy.png" alt="Layerstop logo">
+            <div class="logo"
+                style="font-family: 'HelveticaLocal', sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em;">
+                AC
             </div>
             <ul class="nav-links">
                 <li><a href="#">home</a></li>
@@ -1498,75 +1400,71 @@
         <div class="hero-content reveal">
             <div class="hero-text">
 
-                <h1><span class="graphic-word">Graphic</span><br>
-                    <span class="designer-first">D</span>esigner
+                <h1><span class="graphic-word">Software</span><br>
+                    <span class="designer-first">E</span>ngineer
                 </h1>
 
                 <div class="services">
                     <div class="service-item">
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <rect x="4" y="3" width="16" height="18" rx="2"></rect>
-                            <line x1="8" y1="8" x2="16" y2="8"></line>
-                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                            <line x1="8" y1="16" x2="13" y2="16"></line>
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                         </svg>
-                        <div class="service-name">Print Editions</div>
+                        <div class="service-name">AI / ML</div>
                     </div>
                     <div class="service-item">
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <path d="M16 4l4 2-2 4v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V10L4 6l4-2"></path>
-                            <path d="M8 4l4 3 4-3"></path>
+                            <path d="M3 3v18h18"></path>
+                            <path d="M18 17V9"></path>
+                            <path d="M13 17V5"></path>
+                            <path d="M8 17v-3"></path>
                         </svg>
-                        <div class="service-name">Apparel</div>
+                        <div class="service-name">Data Analytics</div>
                     </div>
                     <div class="service-item">
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="8" y1="9" x2="8" y2="20"></line>
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
 
-                        <div class="service-name">Interfaces</div>
+                        <div class="service-name">Systems</div>
                     </div>
                     <div class="service-item">
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <line x1="4" y1="20" x2="20" y2="20"></line>
-                            <polyline points="6 16 10 12 14 14 18 8"></polyline>
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
                         </svg>
 
-                        <div class="service-name">Ventures</div>
+                        <div class="service-name">Research</div>
                     </div>
                 </div>
             </div>
 
             <div class="hero-right">
-                <h3>Design that speaks louder than words.</h3>
-                <p class="ttcommons">Design solutions that communicate with clarity and intent. I craft bold, modern
-                    visuals that help
-                    brands stand out with confidence.</p>
+                <h3>From data to decisions.</h3>
+                <p class="ttcommons">Building intelligent systems that transform complex data into actionable insights.
+                    I craft robust, scalable solutions that bridge the gap between research and real-world impact.</p>
             </div>
         </div>
     </section>
 
     <section class="brands-section">
-        <div class="brands-title">Trusted by innovative brands</div>
+        <div class="brands-title">Technologies I Work With</div>
         <div class="brands-grid">
-            <div class="brand-item"><a href="https://ibb.co/vxRgyCD6" target="_blank" rel="noopener noreferrer"><img
-                        class="brand-logo" src="https://i.ibb.co/VW5rn03c/image-removebg-preview-7.png"
-                        alt="VR Luxuries logo"></a></div>
-            <div class="brand-item"><a href="https://imgbb.com/" target="_blank" rel="noopener noreferrer"><img
-                        class="brand-logo" src="https://i.ibb.co/6RXjvt8W/ls2-Photoroom-png-Photoroom-Copy-1-Copy.png"
-                        alt="Layerstop logo"></a></div>
-            <div class="brand-item"><a href="https://ibb.co/LdtM7NR1" target="_blank" rel="noopener noreferrer"><img
-                        class="brand-logo"
-                        src="https://i.ibb.co/HTz08h4q/p-Vi6ac-UPBQY7-Itjptopv-Y2y-Wp4-Ltw-Bxxk-Em-XYHP7.png"
-                        alt="Velva Aura logo"></a></div>
-            <div class="brand-item"><a href="https://imgbb.com/" target="_blank" rel="noopener noreferrer"><img
-                        class="brand-logo" src="https://i.ibb.co/whHBfp7z/devsphere-Logo.png" alt="Devspear logo"></a>
+            <div class="brand-item" style="opacity: 0.8;"><span
+                    style="font-size: 1.1rem; font-weight: 600;">Python</span></div>
+            <div class="brand-item" style="opacity: 0.8;"><span
+                    style="font-size: 1.1rem; font-weight: 600;">TensorFlow</span></div>
+            <div class="brand-item" style="opacity: 0.8;"><span
+                    style="font-size: 1.1rem; font-weight: 600;">Scikit-learn</span></div>
+            <div class="brand-item" style="opacity: 0.8;"><span style="font-size: 1.1rem; font-weight: 600;">SQL</span>
             </div>
         </div>
     </section>
@@ -1575,8 +1473,8 @@
         <div class="about-grid">
             <div class="about-left">
                 <p class="section-label"></p>
-                <h2 class="about-title"><span class="initial-part">Initial</span> <span
-                        class="portfolio-part">Portfolio</span></h2>
+                <h2 class="about-title"><span class="initial-part">Featured</span> <span
+                        class="portfolio-part">Projects</span></h2>
             </div>
 
             <div class="about-divider"></div>
@@ -1584,12 +1482,11 @@
             <div class="about-right">
                 <p class="about-description">
                     <b></b>
-                    This collection showcases the earliest phase of my design journey, created when I first began
-                    designing in February 20twenty four. It reflects the foundational skills, exploratory thinking, and
-                    early
-                    visual language that set the direction for my current work. These projects represent the starting
-                    point of my craft where experimentation, curiosity, and a growing understanding of design principles
-                    came together to form the base of my creative practice.
+                    This collection showcases my journey in software engineering and AI/ML, featuring projects from
+                    data analysis workflows to machine learning model development. Each project reflects a blend of
+                    technical rigor, practical problem-solving, and a curiosity-driven approach to learning. These
+                    works represent my growth as an engineer — from foundational experiments to applied systems
+                    that deliver real-world value.
                 </p>
             </div>
         </div>
@@ -1598,64 +1495,238 @@
             <div class="carousel-container">
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ibb.co/cfvRX85/OPPENHIEMER.png" alt="OPPENHIEMER">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-1.png" alt="Market Research"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(63, 186, 194, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Market & Product Research
+                        </h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Competitive analysis for
+                            enterprise software platforms</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Product
+                                Research</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Documentation</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/interstellar.png" alt="Interstellar Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-2.png" alt="Data Analysis"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(122, 162, 247, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Data Analysis Workflows
+                        </h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Trend identification and
+                            reporting with Python</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Python</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">SQL</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Analytics</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/heroes_and_villains.png" alt="Heroes & Villains Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-3.png" alt="GenAI Workflow"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(63, 186, 194, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">GenAI Workflow
+                            Experimentation</h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">LLM-based document
+                            summarization & extraction</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">LLM
+                                APIs</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Prompt
+                                Engineering</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/we_dont_trust_you.jpg" alt="We Don't Trust You Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-4.png" alt="Healthcare Operations"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(122, 162, 247, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Healthcare Operations
+                            Support</h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Workflow documentation for
+                            hospital systems</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Systems
+                                Thinking</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Documentation</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/seedhe_maut.png" alt="Seedhe Maut Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-5.png" alt="ML Model Development"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(63, 186, 194, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">ML Model Development</h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Classification models with
+                            Scikit-learn</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Python</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Scikit-learn</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">ML</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-6.png" alt="Sensor Data Simulation"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(122, 162, 247, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Sensor Data Simulation
+                        </h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Real-time data processing
+                            with C++ and Python</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">C++</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Python</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Systems</span>
+                        </div>
                     </a>
                 </div>
 
                 <!-- duplicated for continuous scrolling -->
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ibb.co/cfvRX85/OPPENHIEMER.png" alt="OPPENHIEMER">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-1.png" alt="Market Research"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(63, 186, 194, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Market & Product Research
+                        </h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Competitive analysis for
+                            enterprise software platforms</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Product
+                                Research</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Documentation</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/interstellar.png" alt="Interstellar Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-2.png" alt="Data Analysis"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(122, 162, 247, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Data Analysis Workflows
+                        </h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Trend identification and
+                            reporting with Python</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Python</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">SQL</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Analytics</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/heroes_and_villains.png" alt="Heroes & Villains Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-3.png" alt="GenAI Workflow"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(63, 186, 194, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">GenAI Workflow
+                            Experimentation</h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">LLM-based document
+                            summarization & extraction</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">LLM
+                                APIs</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Prompt
+                                Engineering</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/we_dont_trust_you.jpg" alt="We Don't Trust You Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-4.png" alt="Healthcare Operations"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(122, 162, 247, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Healthcare Operations
+                            Support</h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Workflow documentation for
+                            hospital systems</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Systems
+                                Thinking</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Documentation</span>
+                        </div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="https://www.behance.net/shashisha1" target="_blank" rel="noopener noreferrer">
-                        <img src="images/seedhe_maut.png" alt="Seedhe Maut Project">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-5.png" alt="ML Model Development"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(63, 186, 194, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">ML Model Development</h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Classification models with
+                            Scikit-learn</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Python</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Scikit-learn</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">ML</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer"
+                        style="display: flex; flex-direction: column; background: rgba(63, 186, 194, 0.05); border: 1px solid rgba(63, 186, 194, 0.2); border-radius: 12px; padding: 1.5rem; height: 100%; text-decoration: none; color: inherit; transition: all 0.3s ease;">
+                        <img src="images/projects/placeholder-6.png" alt="Sensor Data Simulation"
+                            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; background: rgba(122, 162, 247, 0.1); margin-bottom: 1rem;">
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #e6edf3;">Sensor Data Simulation
+                        </h4>
+                        <p style="font-size: 0.7rem; color: #b0b8c4; margin-bottom: 0.8rem;">Real-time data processing
+                            with C++ and Python</p>
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">C++</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Python</span>
+                            <span
+                                style="font-size: 0.6rem; padding: 0.2rem 0.5rem; background: rgba(63, 186, 194, 0.15); border-radius: 10px; color: #3fbac2;">Systems</span>
+                        </div>
                     </a>
                 </div>
 
@@ -1667,119 +1738,164 @@
         <div class="about-details about-left">
             <h3>Education</h3>
             <ul>
-                <li>RV University — Undergraduate</li>
-                <li>Ryan International — <br>Pre University</li>
-                <li>National Public School — Schooling</li>
+                <li><strong>Manipal Institute of Technology</strong></li>
+                <li>B.Tech in CSE (AI) - CGPA: 8.2</li>
+                <li>Aug 2023 – May 2027 | Bangalore</li>
+            </ul>
+            <ul style="margin-top: 1rem;">
+                <li><strong>Paavai Vidhyashram (CBSE)</strong></li>
+                <li>Class XII: 87% | Class X: 95%</li>
+                <li>Namakkal, Tamil Nadu</li>
             </ul>
 
             <h3>Experience</h3>
-            <p>Independent projects for myself and close collaborators</p>
+            <p>Healthcare operations support, product research, and independent technical projects</p>
 
-            <h3>Achievements</h3>
-            <p>Failed NEET</p>
+            <h3>Philosophy</h3>
+            <p><em>"From data to decisions"</em> — Building systems that transform complexity into clarity</p>
         </div>
 
-        <div class="profile-image-container reveal">
-            <img src="images/profile_silhouette.png" alt="Profile Silhouette">
+        <div class="about-details" style="text-align: center; padding: 2rem;">
+            <h3>Core Skills</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Python</span>
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">C++</span>
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">SQL</span>
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Scikit-learn</span>
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">TensorFlow</span>
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">LLM
+                    APIs</span>
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Git</span>
+                <span
+                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Jupyter</span>
+            </div>
+            <a href="documents/Arvinth_AI.pdf" download
+                style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 2rem; padding: 0.8rem 1.5rem; background: rgba(63, 186, 194, 0.2); border: 1px solid #3fbac2; border-radius: 25px; color: #3fbac2; text-decoration: none; font-size: 0.75rem; font-weight: 600; transition: all 0.3s ease;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Resume
+            </a>
         </div>
 
         <div class="about-details about-right">
             <h3>Languages</h3>
             <ul>
-                <li>Hindi</li>
                 <li>English</li>
-                <li>Python</li>
+                <li>Tamil</li>
+                <li>Hindi</li>
             </ul>
 
-            <h3>Software</h3>
-            <p>Listed below</p>
+            <h3>Focus Areas</h3>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Data Analysis</li>
+                <li>GenAI / LLMs</li>
+                <li>Systems Design</li>
+            </ul>
 
             <h3>Contact</h3>
-            <p>Please visit the <a href="contact.html">Connect page</a></p>
+            <p>Visit the <a href="contact.html">Connect page</a></p>
 
             <h3>Interests</h3>
-            <p>Entrepreneurship</p>
+            <p>AI Research, Product Thinking, Automation</p>
         </div>
     </section>
 
     <section class="tools-section reveal">
         <div class="tools-container">
             <div class="tools-left">
-                <div class="tools-title">My Creative Stack</div>
+                <div class="tools-title">My Tech Stack</div>
                 <div class="tools-grid">
                     <div class="tool-item">
-                        <img src="images/tools/photoshop.png" alt="Photoshop" class="tool-icon">
-                        <span class="tool-name">Photoshop</span>
+                        <img src="https://cdn.simpleicons.org/python" alt="Python" class="tool-icon">
+                        <span class="tool-name">Python</span>
                     </div>
                     <div class="tool-item">
-                        <img src="images/tools/premiere.png" alt="Premiere Pro" class="tool-icon">
-                        <span class="tool-name">Premiere Pro</span>
+                        <img src="https://cdn.simpleicons.org/cplusplus" alt="C++" class="tool-icon">
+                        <span class="tool-name">C++</span>
                     </div>
                     <div class="tool-item">
-                        <img src="https://cdn.simpleicons.org/figma" alt="Figma" class="tool-icon">
-                        <span class="tool-name">Figma</span>
+                        <img src="https://cdn.simpleicons.org/scikitlearn" alt="Scikit-learn" class="tool-icon">
+                        <span class="tool-name">Scikit-learn</span>
                     </div>
-
+                    <div class="tool-item">
+                        <img src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow" class="tool-icon">
+                        <span class="tool-name">TensorFlow</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://cdn.simpleicons.org/jupyter" alt="Jupyter" class="tool-icon">
+                        <span class="tool-name">Jupyter</span>
+                    </div>
+                    <div class="tool-item">
+                        <img src="https://cdn.simpleicons.org/postgresql" alt="SQL" class="tool-icon">
+                        <span class="tool-name">SQL</span>
+                    </div>
                     <div class="tool-item">
                         <img src="https://cdn.simpleicons.org/github" alt="GitHub" class="tool-icon">
                         <span class="tool-name">GitHub</span>
                     </div>
                     <div class="tool-item">
-                        <img src="https://cdn.simpleicons.org/behance" alt="Behance" class="tool-icon">
-                        <span class="tool-name">Behance</span>
-                    </div>
-                    <div class="tool-item">
-                        <img src="images/tools/google_labs.png" alt="Google Labs" class="tool-icon">
-                        <span class="tool-name">Google Labs</span>
-                    </div>
-                    <div class="tool-item">
-                        <img src="images/tools/vscode.png" alt="VS Code" class="tool-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code" class="tool-icon">
                         <span class="tool-name">VS Code</span>
+                    </div>
+                    <div class="tool-item">
+                        <svg class="tool-icon" viewBox="0 0 24 24" fill="white"
+                            style="width: 48px; height: 48px; opacity: 0.85;">
+                            <path
+                                d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z" />
+                        </svg>
+                        <span class="tool-name">LLM APIs</span>
                     </div>
                 </div>
             </div>
             <div class="tools-right">
                 <p class="tools-description">
-                    I leverage a vast ecosystem of <b>industry standard tools</b> and cutting edge <b>AI
-                        integration</b> to transform ambitious ideas into high impact digital experiences.
+                    I leverage a robust ecosystem of <b>modern development tools</b> and cutting-edge <b>AI/ML
+                        frameworks</b> to build intelligent systems that transform data into actionable insights.
                 </p>
             </div>
         </div>
     </section>
 
     <section class="categories-section reveal" id="projects">
-        <a href="carousel try2.html" class="category-card">
-    <img src="images/ChatGPT Image Jan 1, 2026, 06_52_49 PM.png"
-         alt="Print Editions"
-         class="category-thumb">
-    <div class="category-title">Print Editions</div>
-</a>
-
-
-        <a href="videos/ls-2.mp4" class="category-card" target="_blank">
-            <video class="category-video" autoplay muted loop playsinline>
-                <source src="videos/ls-2.mp4" type="video/mp4">
-            </video>
-            <div class="category-title">Apparel</div>
+        <a href="https://github.com/arvinth777" class="category-card" target="_blank">
+            <div
+                style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(63, 186, 194, 0.3) 0%, rgba(14, 17, 23, 0.9) 100%); z-index: 0;">
+            </div>
+            <div class="category-title">AI / ML Projects</div>
         </a>
 
-
-        <a href="visual_design.html" class="category-card">
-            <video class="category-video" autoplay muted loop playsinline>
-                <source src="videos/visual-design.mp4" type="video/mp4">
-            </video>
-            <div class="category-title">Interfaces</div>
+        <a href="https://github.com/arvinth777" class="category-card" target="_blank">
+            <div
+                style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(122, 162, 247, 0.3) 0%, rgba(14, 17, 23, 0.9) 100%); z-index: 0;">
+            </div>
+            <div class="category-title">Data Analytics</div>
         </a>
 
-
-        <a href="ventures.html" class="category-card">
-            <video class="category-video" autoplay muted loop playsinline>
-                <source src="videos/ventures.mp4" type="video/mp4">
-            </video>
-            <div class="category-title">Ventures</div>
+        <a href="https://github.com/arvinth777" class="category-card" target="_blank">
+            <div
+                style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(63, 186, 194, 0.2) 0%, rgba(14, 17, 23, 0.9) 100%); z-index: 0;">
+            </div>
+            <div class="category-title">Systems & Backend</div>
         </a>
 
-
+        <a href="https://github.com/arvinth777" class="category-card" target="_blank">
+            <div
+                style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(122, 162, 247, 0.2) 0%, rgba(14, 17, 23, 0.9) 100%); z-index: 0;">
+            </div>
+            <div class="category-title">Research & Docs</div>
+        </a>
     </section>
 
 
@@ -1943,15 +2059,16 @@
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-name">
-                Shashish
+                Arvinth
             </div>
 
             <div class="footer-left">
-                <img src="https://i.ibb.co/NdZmT13P/ls2-Photoroom-png-Photoroom-Copy-1-Copy.png" alt="Layerstop logo"
-                    class="footer-logo">
+                <p
+                    style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; font-family: 'HelveticaLocal', sans-serif;">
+                    Arvinth Cinmayan G K</p>
                 <p class="footer-tagline ttcommons">
-                    Designed visuals, branding, and systems<br>
-                    built with clarity and intent.
+                    From data to decisions.<br>
+                    Building intelligent systems with clarity and purpose.
                 </p>
             </div>
 
@@ -1966,11 +2083,10 @@
 
                 <div class="footer-column">
                     <span class="footer-title">Connect</span>
-                    <a href="https://www.behance.net/shashisha1" target="_blank">Behance</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="https://www.linkedin.com/in/shashish-a-b2208b2b3" target="_blank"
+                    <a href="https://github.com/arvinth777" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/arvinth-cinmayan-855949366" target="_blank"
                         rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://www.youtube.com/@shaunaka-dv9qi" target="_blank">yt</a>
+                    <a href="mailto:arvinth273@gmail.com">Email</a>
                 </div>
 
             </div>
@@ -1978,61 +2094,61 @@
         </div>
 
         <div class="footer-bottom ttcommons">
-            © 2026 Shashish • Built with design, not templates
+            © 2026 Arvinth Cinmayan • Built with purpose, not templates
         </div>
     </footer>
-<script>
-    // Register ScrollTrigger if not already done
-    gsap.registerPlugin(ScrollTrigger);
+    <script>
+        // Register ScrollTrigger if not already done
+        gsap.registerPlugin(ScrollTrigger);
 
-    // Footer Name Swipe Animation
-    gsap.from(".footer-name", {
-        scrollTrigger: {
-            trigger: ".site-footer", // Starts when the footer enters the view
-            start: "top 90%",        // Animates when footer is 90% down the screen
-            toggleActions: "play none none none"
-        },
-        x: -200,                // Start 200px to the left
-        opacity: 0,             // Start invisible
-        duration: 1.5,          // Speed of the swipe
-        ease: "power4.out",     // Smooth "deceleration" effect
-        autoAlpha: 1,           // Switches visibility from hidden to visible
-        delay: 0.2              // Slight delay for a premium feel
-    });
-</script>
-<div id="github-popup" class="glass-popup">
-    <div class="popup-content">
-        <p>Visit the <a href="contact.html">Connect page</a> to find my GitHub!</p>
-        <button id="close-popup">&times;</button>
+        // Footer Name Swipe Animation
+        gsap.from(".footer-name", {
+            scrollTrigger: {
+                trigger: ".site-footer", // Starts when the footer enters the view
+                start: "top 90%",        // Animates when footer is 90% down the screen
+                toggleActions: "play none none none"
+            },
+            x: -200,                // Start 200px to the left
+            opacity: 0,             // Start invisible
+            duration: 1.5,          // Speed of the swipe
+            ease: "power4.out",     // Smooth "deceleration" effect
+            autoAlpha: 1,           // Switches visibility from hidden to visible
+            delay: 0.2              // Slight delay for a premium feel
+        });
+    </script>
+    <div id="github-popup" class="glass-popup">
+        <div class="popup-content">
+            <p>Check out my projects on <a href="https://github.com/arvinth777" target="_blank">GitHub</a>!</p>
+            <button id="close-popup">&times;</button>
+        </div>
     </div>
-</div>  
-<script>
-    const popup = document.getElementById('github-popup');
-    const closeBtn = document.getElementById('close-popup');
+    <script>
+        const popup = document.getElementById('github-popup');
+        const closeBtn = document.getElementById('close-popup');
 
-    function togglePopup() {
-        // Show the popup
-        popup.classList.add('show');
+        function togglePopup() {
+            // Show the popup
+            popup.classList.add('show');
 
-        // Stay for 5 seconds then hide
-        setTimeout(() => {
+            // Stay for 5 seconds then hide
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 5000);
+        }
+
+        // Manual close listener
+        closeBtn.addEventListener('click', () => {
             popup.classList.remove('show');
-        }, 5000);
-    }
+        });
 
-    // Manual close listener
-    closeBtn.addEventListener('click', () => {
-        popup.classList.remove('show');
-    });
+        // 3 second delay before the very first appearance
+        setTimeout(() => {
+            togglePopup();
 
-    // 3 second delay before the very first appearance
-    setTimeout(() => {
-        togglePopup();
-        
-        // After the first one shows, repeat every 20 seconds
-        setInterval(togglePopup, 20000);
-    }, 3000);
-</script>
+            // After the first one shows, repeat every 20 seconds
+            setInterval(togglePopup, 20000);
+        }, 3000);
+    </script>
 
 </body>
 
