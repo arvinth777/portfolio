@@ -5,21 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arvinth Cinmayan | Software Engineer Portfolio</title>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .ttcommons {
-            font-family: 'TTCommonsLocal', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .tools-description.ttcommons {
-            font-family: 'TTCommonsLocal', sans-serif;
-        }
-
-        @font-face {
-            font-family: 'TTCommonsLocal';
-            src: url('./fonts/Fontspring-DEMO-tt_commons_pro_regular.otf') format('opentype');
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap;
+            font-family: 'Inter', sans-serif;
         }
 
         /* --- CATEGORIES SECTION --- */
@@ -298,7 +294,7 @@
         .service-name {
             font-size: 1rem;
             font-weight: 600;
-            font-family: 'TTCommonsLocal', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .hero-right {
@@ -428,14 +424,14 @@
 
 
         .about-description {
-            font-size: 0.6rem;
+            font-size: 1rem;
             line-height: 1.6;
             color: #b0b8c4;
             font-weight: 400;
             max-width: 600px;
             text-align: right;
             margin-left: auto;
-            font-family: 'TTCommonsLocal', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .about-description b {
@@ -536,42 +532,74 @@
 
         /* --- PROFILE ABOUT SECTION --- */
         .profile-about-section {
-            max-width: 1400px;
-            margin: 8rem auto;
-            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .profile-about-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .profile-about-header h2 {
+            font-family: 'HelveticaLocal', Helvetica, Arial, sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #e6edf3 0%, #3fbac2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .profile-about-header .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            color: #b0b8c4;
+            font-weight: 400;
+        }
+
+        .about-cards-grid {
             display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
 
+        .about-card {
+            background: rgba(63, 186, 194, 0.05);
+            border: 1px solid rgba(63, 186, 194, 0.15);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
 
+        .about-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(63, 186, 194, 0.4);
+            box-shadow: 0 20px 40px rgba(63, 186, 194, 0.1);
+        }
 
-        .about-details {
-            position: relative;
-            z-index: 1;
+        .about-card h3 {
             font-family: 'YapariLocal', sans-serif;
-        }
-
-        .about-details h3 {
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #3fbac2;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
+            margin-bottom: 1.2rem;
         }
 
-        .about-details h3:first-child {
-            margin-top: 0;
-        }
-
-        .about-details p,
-        .about-details ul {
-            font-family: 'TTCommonsLocal', sans-serif;
-            font-size: 0.65rem;
+        .about-card p,
+        .about-card ul {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
             line-height: 1.8;
             color: #e6edf3;
             margin: 0;
@@ -580,41 +608,48 @@
         }
 
 
-        .about-details ul li {
-            margin-bottom: 0.5rem;
+        .about-card ul li {
+            margin-bottom: 0.6rem;
+            padding-left: 0;
         }
 
-        .about-details a {
-            color: #b0b8c4;
+        .about-card a {
+            color: #3fbac2;
             text-decoration: none;
             transition: color 0.3s;
         }
 
-        .about-details a:hover {
+        .about-card a:hover {
             color: #7aa2f7;
+            text-decoration: underline;
         }
 
-        .about-right {
-            text-align: right;
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 0.5rem;
         }
 
-        .profile-image-container {
-            max-width: 750px;
-            width: 100%;
-            position: relative;
-            z-index: 1;
+        .skill-badge {
+            background: rgba(63, 186, 194, 0.15);
+            border: 1px solid rgba(63, 186, 194, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: #e6edf3;
+            transition: all 0.3s ease;
         }
 
-        .profile-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
-            transition: transform 0.3s ease;
+        .skill-badge:hover {
+            background: rgba(63, 186, 194, 0.25);
+            transform: translateY(-2px);
         }
 
-        .profile-image-container img:hover {
-            transform: scale(1.02);
+        .about-cta {
+            text-align: center;
+            margin-top: 2rem;
         }
 
         /* --- CATEGORY CARDS --- */
@@ -817,7 +852,7 @@
             line-height: 1.6;
             opacity: 0.9;
             font-weight: 300;
-            font-family: TTCommonsLocal;
+            font-family: 'Inter', sans-serif;
         }
 
         .tools-description b {
@@ -1025,7 +1060,7 @@
             font-size: 0.8rem;
             text-decoration: none;
             color: #d0d0d0;
-            font-family: 'TTCommonsLocal', sans-serif;
+            font-family: 'Inter', sans-serif;
             transition: color 0.3s ease, transform 0.3s ease;
         }
 
@@ -1334,7 +1369,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             z-index: 9999;
             transition: right 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-family: 'TTCommonsLocal', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .glass-popup.show {
@@ -1399,10 +1434,15 @@
 
         <div class="hero-content reveal">
             <div class="hero-text">
-
-                <h1><span class="graphic-word">Software</span><br>
-                    <span class="designer-first">E</span>ngineer
+                <p
+                    style="font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #3fbac2; font-weight: 500; margin-bottom: 0.5rem; letter-spacing: 1px;">
+                    Hi, I'm</p>
+                <h1 style="margin-bottom: 0.5rem;"><span class="graphic-word">Arvinth</span><br>
+                    <span class="designer-first">C</span>inmayan
                 </h1>
+                <p
+                    style="font-family: 'Inter', sans-serif; font-size: 1.3rem; color: #b0b8c4; margin-bottom: 2rem; font-weight: 400;">
+                    Software Engineer • AI/ML Enthusiast</p>
 
                 <div class="services">
                     <div class="service-item">
@@ -1735,79 +1775,91 @@
     </section>
 
     <section class="profile-about-section reveal" id="about">
-        <div class="about-details about-left">
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Manipal Institute of Technology</strong></li>
-                <li>B.Tech in CSE (AI) - CGPA: 8.2</li>
-                <li>Aug 2023 – May 2027 | Bangalore</li>
-            </ul>
-            <ul style="margin-top: 1rem;">
-                <li><strong>Paavai Vidhyashram (CBSE)</strong></li>
-                <li>Class XII: 87% | Class X: 95%</li>
-                <li>Namakkal, Tamil Nadu</li>
-            </ul>
-
-            <h3>Experience</h3>
-            <p>Healthcare operations support, product research, and independent technical projects</p>
-
-            <h3>Philosophy</h3>
-            <p><em>"From data to decisions"</em> — Building systems that transform complexity into clarity</p>
+        <div class="profile-about-header">
+            <h2>About Me</h2>
+            <p class="subtitle">Building intelligent systems that transform complexity into clarity</p>
         </div>
 
-        <div class="about-details" style="text-align: center; padding: 2rem;">
-            <h3>Core Skills</h3>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Python</span>
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">C++</span>
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">SQL</span>
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Scikit-learn</span>
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">TensorFlow</span>
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">LLM
-                    APIs</span>
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Git</span>
-                <span
-                    style="background: rgba(63, 186, 194, 0.15); border: 1px solid rgba(63, 186, 194, 0.3); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.7rem;">Jupyter</span>
+        <div class="about-cards-grid">
+            <!-- Education Card -->
+            <div class="about-card">
+                <h3>🎓 Education</h3>
+                <ul>
+                    <li><strong>Manipal Institute of Technology</strong></li>
+                    <li>B.Tech in CSE (AI) — CGPA: 8.2</li>
+                    <li>Aug 2023 – May 2027 | Bangalore</li>
+                </ul>
+                <ul style="margin-top: 1.2rem;">
+                    <li><strong>Paavai Vidhyashram (CBSE)</strong></li>
+                    <li>Class XII: 87% | Class X: 95%</li>
+                </ul>
             </div>
+
+            <!-- Experience Card -->
+            <div class="about-card">
+                <h3>💼 Experience</h3>
+                <p>Healthcare operations support, product research, and independent technical projects in AI/ML domains.
+                </p>
+                <p style="margin-top: 1rem;"><em>"From data to decisions"</em> — I believe in building systems that
+                    transform raw information into actionable insights.</p>
+            </div>
+
+            <!-- Focus Areas Card -->
+            <div class="about-card">
+                <h3>🎯 Focus Areas</h3>
+                <ul>
+                    <li>Machine Learning & Deep Learning</li>
+                    <li>Data Analysis & Visualization</li>
+                    <li>Generative AI / LLMs</li>
+                    <li>Systems Design & Backend</li>
+                </ul>
+            </div>
+
+            <!-- Skills Card -->
+            <div class="about-card">
+                <h3>⚡ Core Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Scikit-learn</span>
+                    <span class="skill-badge">TensorFlow</span>
+                    <span class="skill-badge">LLM APIs</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">Jupyter</span>
+                </div>
+            </div>
+
+            <!-- Languages Card -->
+            <div class="about-card">
+                <h3>🌐 Languages</h3>
+                <ul>
+                    <li>English (Fluent)</li>
+                    <li>Hindi (Conversational)</li>
+                </ul>
+            </div>
+
+            <!-- Interests Card -->
+            <div class="about-card">
+                <h3>💡 Interests</h3>
+                <p>AI Research, Product Thinking, Automation, and building tools that make complex tasks simple.</p>
+            </div>
+        </div>
+
+        <div class="about-cta">
             <a href="documents/Arvinth_AI.pdf" download
-                style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 2rem; padding: 0.8rem 1.5rem; background: rgba(63, 186, 194, 0.2); border: 1px solid #3fbac2; border-radius: 25px; color: #3fbac2; text-decoration: none; font-size: 0.75rem; font-weight: 600; transition: all 0.3s ease;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 1rem 2rem; background: linear-gradient(135deg, rgba(63, 186, 194, 0.2), rgba(122, 162, 247, 0.2)); border: 1px solid #3fbac2; border-radius: 30px; color: #3fbac2; text-decoration: none; font-size: 1rem; font-weight: 600; font-family: 'Inter', sans-serif; transition: all 0.3s ease;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <polyline points="7 10 12 15 17 10"></polyline>
                     <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
-                Download Resume
+                Download My Resume
             </a>
-        </div>
-
-        <div class="about-details about-right">
-            <h3>Languages</h3>
-            <ul>
-                <li>English</li>
-                <li>Tamil</li>
-                <li>Hindi</li>
-            </ul>
-
-            <h3>Focus Areas</h3>
-            <ul>
-                <li>Machine Learning</li>
-                <li>Data Analysis</li>
-                <li>GenAI / LLMs</li>
-                <li>Systems Design</li>
-            </ul>
-
-            <h3>Contact</h3>
-            <p>Visit the <a href="contact.html">Connect page</a></p>
-
-            <h3>Interests</h3>
-            <p>AI Research, Product Thinking, Automation</p>
+            <a href="contact.html"
+                style="display: inline-flex; align-items: center; gap: 0.6rem; margin-left: 1rem; padding: 1rem 2rem; background: transparent; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 30px; color: #e6edf3; text-decoration: none; font-size: 1rem; font-weight: 600; font-family: 'Inter', sans-serif; transition: all 0.3s ease;">
+                Let's Connect →
+            </a>
         </div>
     </section>
 
